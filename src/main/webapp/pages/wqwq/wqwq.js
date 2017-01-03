@@ -1,4 +1,4 @@
-Application.$controller("MainPageController", ["$scope", function($scope) {
+Application.$controller("wqwqPageController", ["$scope", function($scope) {
     "use strict";
 
     /* perform any action on widgets/variables within this block */
@@ -16,25 +16,24 @@ Application.$controller("MainPageController", ["$scope", function($scope) {
 
 
     $scope.grid1Click = function($event, $rowData) {
-        //alert('hi mainpage');
+        //alert('hi wqwq');
     };
 
 }]);
-
 
 
 Application.$controller("grid1Controller", ["$scope",
     function($scope) {
         "use strict";
         $scope.ctrlScope = $scope;
-        alert("from Main");
+        alert("from wqwq");
         $scope.handleClick = function(row) {
-            alert("click handler from Main")
+            alert('click handler from wqwq');
         }
     }
 ]);
 
-Application.$controller("liveform2Controller", ["$scope",
+Application.$controller("liveform1Controller", ["$scope",
     function($scope) {
         "use strict";
         $scope.ctrlScope = $scope;
